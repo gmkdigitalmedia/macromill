@@ -1,0 +1,27 @@
+[
+  {
+    "text": "This movie was absolutely fantastic! The acting was superb and the plot kept me engaged throughout.",
+    "sentiment": "positive",
+    "confidence": 0.9969780445098877
+  },
+  {
+    "text": "Terrible waste of time. Poor acting, bad script, and boring storyline.",
+    "sentiment": "negative",
+    "confidence": 0.9987840056419373
+  },
+  {
+    "text": "It was okay, nothing special but not terrible either.",
+    "sentiment": "negative",
+    "confidence": 0.9440738558769226
+  },
+  {
+    "text": "One of the best films I've ever seen! Highly recommend!",
+    "sentiment": "positive",
+    "confidence": 0.9978760480880737
+  },
+  {
+    "text": "Awful movie. I want my money back.",
+    "sentiment": "negative",
+    "confidence": 0.9989350438117981
+  }
+]

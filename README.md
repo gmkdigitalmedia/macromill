@@ -22,7 +22,7 @@ python train.py
 python app.py
 ```
 
-The trained model is NOT included in this repository (255MB) and must be generated locally by running the training script. The model will be saved to `models/final_model/` automatically.
+The trained model is NOT included in this repository and must be generated locally by running the training script. The model will be saved to `models/final_model/` automatically.
 
 ## Table of Contents
 
