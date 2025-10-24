@@ -1,0 +1,30 @@
+String.prototype.htmlescape = function (){
+ return this.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;") ;}
+ctj_x=navigator.userAgent.toLowerCase();
+ctj_y=-1;
+ctj_re=new RegExp("msie ([0-9]{1,}[\.0-9]{0,})");
+if(ctj_re.exec(ctj_x)!==null){ctj_y=parseFloat(RegExp.$1);}
+ctj_z=(ctj_x.indexOf("msie")!=-1);
+ctj_v=(ctj_x.indexOf("safari")!=-1);
+ctj_u=(ctj_x.indexOf("netscape6")!=-1);
+ctj_r="\u53f3\u30af\u30ea\u30c3\u30af\u306f\u7981\u6b62\u3055\u308c\u3066\u3044\u307e\u3059";
+ctj_ws=(  (ctj_x.indexOf("windows")!=-1) && ctj_v ) ;
+function mc(e){if(ctj_v){
+document.tws.oncontextmenu=new Function("alert(ctj_r);return false");return false;}
+if((navigator.appName=='Netscape')&&(e.which==2||e.which==3)&&(e.target.name=='tws')){
+if(ctj_u)ip();
+else document.tws.oncontextmenu=new Function("alert(ctj_r);return false");return false;}
+else {if(navigator.appName=='Microsoft Internet Explorer'){
+if(typeof e!='undefined'){
+if(e.button==2){alert(ctj_r);return false;}}}}return true;}
+function sp(){return "&host_name="+unescape(location.hostname).htmlescape()+"&referer_param="+unescape(location.hostname).htmlescape();}
+function ip(){var s="https://trusted-web-seal.cybertrust.ne.jp/seal/verify?reqid=0367a53fe74020ac42daacc5d1c6eea587a13c95&type=33&svc=3&cmid="+sp();
+var t=window.open(s,"sv","status=yes,menubar=no,location=yes,toolbar=no,scrollbars=no,resizable=no,height=665,width=580" );
+if(t!=null)t.focus();}
+document.write("<a onmousedown=\"return mc(event);\" href=\"javascript:ip();\" target=\"_self\">");
+document.write("<img border=\"0\" name=\"tws\" src=\"https://trusted-web-seal.cybertrust.ne.jp/seal/getSeal?reqid=0367a53fe74020ac42daacc5d1c6eea587a13c95&type=33&svc=3&cmid="+sp()+"\" alt=\"\"");
+if(ctj_v||ctj_u){document.write("></a>");}
+else document.write(" oncontextmenu='return mc(event);'></a>");
+if(ctj_v){document.tws.oncontextmenu=new Function("alert(ctj_r);return false");}
+if(ctj_u){if(document.addEventListener){document.addEventListener('mouseup',mc,true);}
+else{if(document.layers){document.captureEvents(Event.MOUSEDOWN);}}}

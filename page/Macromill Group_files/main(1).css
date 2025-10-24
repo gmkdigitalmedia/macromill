@@ -1,0 +1,487 @@
+@charset "utf-8";
+
+/* RSS ---------------------------- */
+.irLibrary .irRSS{
+	margin-bottom:3px;
+	margin-top:5px;
+	text-align:right;
+}
+.irLibrary .irRSS img{
+	margin-right:1em;
+	width:16px;
+	height:auto;
+	font-size: 14px;
+	display: inline;
+}
+
+/* 全般 ---------------------------- */
+.irLibrary * {
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.irLibrary.news {
+	padding-top: 10px;
+}
+/*.irLibrary h3{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	color: #706F7D;
+}*/
+.irLibrary .irGroup{
+	margin-bottom: 40px;
+}
+
+.irLibrary .noData{
+	margin-bottom: 40px;
+	font-size: 14px;
+}
+
+/* リスト ---------------------------- */
+.irLibrary dl{
+	/*display:table;*/
+	margin:0;
+	width:100%;
+	border-bottom:1px solid #e5e5e5;
+	margin-bottom: 1em;
+	font-size: 16px;
+	color: #706F7D;
+}
+
+.irLibrary .element_right dl{
+	border-bottom:none;
+}
+
+.irLibrary dt,
+.irLibrary dd {
+	/*display: table-cell;*/
+	vertical-align: top;
+	/*padding: 1em 0;*/
+	margin:0;
+}
+.irLibrary dt{
+	padding-right:1em;
+	width:1px;
+	white-space:nowrap;
+	padding-bottom: 0.5em;
+	font-size: 14px;
+}
+.irLibrary dd {
+	padding-bottom: 1em;
+}
+.irLibrary dd a{
+	color: #0B78B1;
+}
+.irLibrary .teiseiDt{
+	visibility:hidden;
+}
+
+.irLibrary img{
+	vertical-align:middle;
+}
+.irLibrary dt img{
+	margin-left:0.5em;
+}
+.irLibrary dd img {
+	margin:0 0.5em;
+	display: inline-block;
+	margin-top: -5px;					
+}
+.irLibrary .comment{
+	font-size:80%;
+}
+
+/* 日付 ---------------------------- */
+.irLibrary .irDate{
+	margin-right:1em;
+	
+}
+
+/* カテゴリアイコン ---------------------------- */
+
+.irLibrary .cat-tanshin{
+	background-color:#000;
+}
+.irLibrary .cat-yuho{
+	background-color:#000;
+}	
+.irLibrary .cat-pr,
+.irLibrary .cat-press{
+	background-color:#000;
+}
+.irLibrary .cat-announcement{
+	background-color:#000;
+}	
+.irLibrary .cat-ir_material{
+	background-color:#000;
+}
+.irLibrary .cat-ir_material_for_fiscal_ym{
+	background-color:#000;
+}
+
+
+.irLibrary .cat-text{
+	background: none;
+	display:inline;
+	width:100px;
+	padding:0 0 0 1em;
+	text-align:left;
+	border-left:1px solid #706F7D;
+}
+
+/* ファイルアイコン ---------------------------- */
+.pdfIcon{
+	width:16px;
+	height:auto;
+}
+
+/* NEWアイコン ---------------------------- */
+.newIcon{
+	display:inline-block;
+	background-color:#F90;
+	margin-left:0.5em;
+	padding:3px 6px;
+	color:#FFF;
+	font-size:80%;
+	text-align:center;
+}
+	
+
+/* アンカーリンク ---------------------------- */
+.irLibrary div#ancList ul{
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+.irLibrary div#ancList li{
+	background:url('../img/arw.gif') no-repeat left center;
+	display: inline-block;
+	padding-left:20px;
+	padding-right:10px;
+	white-space:nowrap;
+}
+
+
+/* IRカレンダー ---------------------------- */
+.irLibrary #irCalendar img{
+	width:100%;
+	height:auto;
+}
+
+
+/* サムネイル ---------------------------- */
+.irLibrary .thumbnail{
+	/* width:100px;
+	height:auto; */
+	max-width:300px;
+	margin:0;
+	border:1px solid #ccc;
+}
+
+/* アニュアルレポート ---------------------------- */
+.irLibrary h4.latest{
+	font-size: 20px;
+}
+
+.flex_top{
+	display: flex;
+}
+
+.irLibrary .flex_top dt{
+	width:auto;
+}
+
+.irLibrary h4.split{
+	font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #706F7D;
+}
+
+.irLibrary dd.attachment{
+ 	margin-left: 20px;
+}
+
+.irLibrary .element_right{
+	margin: 0 auto;
+}
+
+
+/* 最新資料 ---------------------------- */
+#eirNewRelease ul{
+	padding-left:0;
+}
+#eirNewRelease li{
+	list-style-type:none;
+	list-style-position:inside;
+	padding:0.5em 0;
+}
+#eirNewRelease li .nrHead{
+	font-weight:bold;
+}
+#eirNewRelease li img{
+	margin:0 0.5em;
+	vertical-align:middle;
+}
+
+
+/* タブ ---------------------------- */
+.irLibrary #tab{
+	width:100%;
+	margin:1em 0 2em 0;
+	padding:0;
+	list-style:none;
+	font-size: 16px;
+}
+.irLibrary #tab li{
+	margin:0 10px 0 0;
+	padding:0;
+	display:inline-block;
+	width:23%;
+}
+.irLibrary #tab li:last-child{
+	margin-right:0;
+}
+.irLibrary #tab li a{
+	display:block;
+	position:relative;
+	background-color:#FFF;
+	padding:15px;
+	color:#0b52a4;
+	text-align:center;
+	text-decoration:none;
+	border:1px solid #0b52a4;
+	outline: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+.irLibrary #tab li a.selected,
+.irLibrary #tab li a:hover{
+	color:#FFF;
+	background-color:#0b52a4;
+	text-decoration:none;
+}
+
+/*#tab #nav1 a{
+	background-position:-110px 0;
+}	
+#tab #nav2 a{
+	background-position:-220px 0;
+}
+#tab #nav3 a{
+	background-position:-330px 0;
+}
+#tab #nav4 a{
+	background-position:-440px 0;
+}	
+#tab #nav5 a{
+	background-position:-550px 0;
+}
+#tab #nav0 a:hover{ background-position:0 -30px;}
+#tab #nav1 a:hover{ background-position:-110px -30px;}
+#tab #nav2 a:hover{ background-position:-220px -30px;}
+#tab #nav3 a:hover{ background-position:-330px -30px;}
+#tab #nav4 a:hover{ background-position:-440px -30px;}
+#tab #nav5 a:hover{ background-position:-550px -30px;}
+
+#tab #nav0 a.selected{ background-position:0 -30px!important;}
+#tab #nav1 a.selected{ background-position:-110px -30px!important;}
+#tab #nav2 a.selected{ background-position:-220px -30px!important;}
+#tab #nav3 a.selected{ background-position:-330px -30px!important;}
+#tab #nav4 a.selected{ background-position:-440px -30px!important;}
+#tab #nav5 a.selected{ background-position:-550px -30px!important;}*/
+
+/* メニュー・プルダウン */
+.irLibrary #yearList{
+	margin-bottom:30px;	
+}
+.irLibrary .yearSelect{
+	padding:10px 20px;;
+}
+.irLibrary .yearMenu{
+	padding:0;
+}
+.irLibrary .yearMenu li{
+	display:inline-block;
+	padding:0;
+	margin-right:16px;
+}
+.irLibrary .yearMenu li:last-child{
+	margin-right:0;
+}
+/*三角アイコン
+.yearMenu li a:before {
+    display:inline-block;
+    content: "";
+    border: 5px solid transparent;
+    border-left: 5px solid #000;
+}
+*/
+
+/* 財務データDLボタン */
+#irCSV a{
+	width:200px;
+	display:block;
+	position:relative;
+	background-color:#FFF;
+	padding:15px;
+	color:#333;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	border:2px solid #000;
+	border-radius:15px;
+	outline: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;	
+}
+#irCSV a:hover{
+	color:#FFF;
+	background-color:#000;
+	text-decoration:none;
+}
+
+
+/* フッター ---------------------------- */
+#download{
+	padding-top:20px;
+	padding-bottom:10px;
+}
+#download img{
+	max-width:100%;
+	float:left;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+#pnex{
+	margin-top:15px;
+	margin-bottom:15px;
+	clear:both;
+	border-top:#CCCCCC solid 1px;
+	padding-top:10px;
+}
+#pnex:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#pnex img{
+	max-width:100%;
+	float:right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.governanceEir dl {
+    text-align: right;
+    border-bottom: 0px;
+}
+
+.governanceEir .noData{
+	text-align: right;
+}
+
+.news #yearList {
+	padding: 12px 12px 0;
+    border: 1px solid #dce6f0;
+}
+.news #yearList li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 1em;
+    width: 10em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-right: 1px solid #dce6f0;
+}
+.news #yearList li a {
+    color: #323c46;
+}
+
+/* アニュアルレポート ---------------------------- */
+@media screen and (max-width: 600px){
+	.irLibrary .flex_top{
+		display: block;
+	}
+
+	/* サムネイル ---------------------------- */
+	.irLibrary .thumbnail{
+		max-width:100%;
+	}
+
+}
+
+/* For responsive */
+@media screen and (max-width:800px) {
+	.irLibrary dt,
+	.irLibrary dd {
+		display:block;
+		padding:0.5em;
+	}
+	.irLibrary dt{
+		padding-bottom:0;
+		width: inherit;
+		white-space: normal;
+	}
+
+	.irLibrary #tab li{
+		width:49%;
+		margin:0 0 8px 0;
+		float:left;
+		font-size: 14px;
+	}
+	.irLibrary #tab li:nth-child(2n){
+		float:right;
+	}
+	.irLibrary #tab li a{
+		width:100%;
+	}
+
+	.irLibrary #irCalendar img{
+		max-width:100%;
+	}
+	
+	.irLibrary #irCSV{
+		display:none;
+	}
+
+	#download img{
+		display:block;
+		float:none;
+	}
+
+	.irLibrary h4.split{
+		padding-top:0.5em;
+		padding-left:0.5em;
+		padding-bottom:0;
+	}
+}
+
+
+#eirArea2 a[href$=".pdf"]:after,
+#eirArea a[href$=".pdf"]:after {
+	display: none;
+}
+
+@media screen and (max-width:1007px) {
+
+.news #yearList li {
+	width: auto;
+}
+
+}
+
+/* For print */
+@media print{
+}

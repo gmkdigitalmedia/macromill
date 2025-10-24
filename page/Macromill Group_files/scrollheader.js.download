@@ -1,0 +1,15 @@
+$(function(){
+	// ブラウザをスクロール
+	$(window).scroll(function(){
+		// スクロール量が300pxを超えているかチェック
+		if($(window).scrollTop() > 300){
+			// 超えている場合：header要素にtopnavクラスを追加
+			$("body").addClass("topnav");
+			// フェードインで表示
+		}else{
+			// 超えていない場合：header要素からtopnavクラスを削除
+			$("body").removeClass("topnav");
+		}
+
+	});
+});

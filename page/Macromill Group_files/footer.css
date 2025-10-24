@@ -1,0 +1,191 @@
+#footer_top {
+	width: 100%;
+	background: #FFF;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+#footerBox {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+	padding: 20px 5%;
+	overflow: hidden;
+}
+
+.footerNaviBox {
+	background: #222222;
+	color: #FFF;
+}
+
+.footerNavinside {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+	padding: 50px 5%;
+}
+
+ul.footercolumn {
+	overflow: hidden;
+}
+
+ul.footercolumn li {
+	width: 21.5%;
+	margin-right: 4%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+	ul.footercolumn li:last-child {
+		margin-right: 0;
+	}
+
+.footerspNavBox {
+	display: none;
+}
+
+	@media screen and (max-width: 768px) {
+		#footerBox {
+			max-width: 100%;
+			padding: 20px 4%;
+		}
+
+		.footerspNavBox {
+			display: inherit;
+		}
+
+		ul.footerspNav {
+			border-top: solid 1px #666;
+			border-bottom: solid 1px #666;
+			color: #FFF;
+			overflow: hidden;
+			background: #222;
+		}
+
+		ul.footerspNav li {
+			width: 25%;
+			float: left;
+			/*display: inline-block;*/
+			border-right: solid 1px #666;
+			text-align: center;
+		}
+
+		ul.footerspNav li a:link,
+		ul.footerspNav li a:visited {
+			padding: 10px 5%;
+			background: #222;
+			color: #FFF;
+			display: block;
+			text-decoration: none;
+		}
+
+		ul.footerspNav li:last-child {
+			border-right: 0;
+		}
+
+	}
+
+.footerCopyright {
+	float: left;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #333;
+}
+
+.footerSecLogo {
+	float: right;
+}
+
+/* navi */
+ul.footerNav {
+	overflow: hidden;
+}
+
+	ul.footerNav li {
+		width: 100%;
+		margin-top: 15px;
+		padding-bottom: 15px;
+		display: inherit;
+		border-bottom: solid 1px #FFF;
+		position: relative;
+	}
+
+	ul.footerNav li:first-child {
+		margin-top: 0;
+	}
+
+	ul.footerNav li:after {
+		font-family: 'FontAwesome';
+		content: "\f105";
+		position: absolute;
+		right: 10px;
+		top: 3px;
+	}
+
+
+	ul.footerNav li a:link,
+	ul.footerNav li a:visited {color: #FFF;display: block;text-decoration: none;}
+	ul.footerNav li a:hover {text-decoration: none;color: #999;}
+
+ul.footer2ndNav {
+	margin-top: 10px;
+	padding-top:15px;
+}
+
+	ul.footer2ndNav li {
+		width: 93%;
+		margin-left: 7%;
+		padding-bottom: 8px;
+		display: inherit;
+		position: relative;
+	}
+
+	ul.footer2ndNav li:after {
+		font-family: 'FontAwesome';
+		content: "\f105";
+		position: absolute;
+		right: 10px;
+		top: 3px;
+	}
+
+	ul.footer2ndNav li a:link,
+	ul.footer2ndNav li a:visited {color: #FFF;display: block;text-decoration: none;}
+	ul.footer2ndNav li a:hover {text-decoration: none;color: #999;}
+
+
+/**/
+#footer_top ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer_top ul {
+    /*display: none;*/
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+#footer_top ul ul {
+	/*display: inherit;*/
+}
+
+
+/**/
+.pcOnly {
+	display: inherit;
+}
+
+.spOnly {
+	display: inherit;
+}
+
+@media screen and (max-width: 768px) {
+	.pcOnly {display: none;}
+	.spOnly {display: inherit;}
+}
